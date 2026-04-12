@@ -39,8 +39,7 @@ export default function HowItWorks() {
         {steps.map((step) => (
           <div
             key={step.number}
-            className="relative rounded-2xl p-8 bg-[#111] border border-[#1e1e1e] overflow-hidden"
-            style={{ borderTop: "2px solid #f97316" }}
+            className="relative rounded-2xl p-8 bg-[#111] border border-[#1e1e1e] border-t-2 border-t-orange-500 overflow-hidden"
           >
             {/* Faded step number */}
             <span className="absolute top-4 right-6 text-7xl font-black text-white/5 select-none leading-none">

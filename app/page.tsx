@@ -4,16 +4,18 @@ import Problem from "./components/Problem";
 import HowItWorks from "./components/HowItWorks";
 import Features from "./components/Features";
 import WhoItsFor from "./components/WhoItsFor";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main>
       <Nav />
       <Hero />
       <Problem />
       <HowItWorks />
       <Features />
       <WhoItsFor />
+      <Footer />
     </main>
   );
 }

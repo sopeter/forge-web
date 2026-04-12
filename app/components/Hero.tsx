@@ -54,7 +54,7 @@ export default function Hero() {
       />
 
       {/* Pulsing badge */}
-      <div className="animate-[pulse-slow_3s_ease-in-out_infinite] mb-8 inline-flex items-center px-4 py-1.5 rounded-full border border-orange-500/60 bg-orange-500/10 text-orange-400 text-xs font-bold tracking-widest uppercase">
+      <div className="animate-pulse-slow mb-8 inline-flex items-center px-4 py-1.5 rounded-full border border-orange-500/60 bg-orange-500/10 text-orange-400 text-xs font-bold tracking-widest uppercase">
         In Development · iOS 17+
       </div>
 

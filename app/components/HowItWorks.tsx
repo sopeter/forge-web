@@ -21,7 +21,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="px-6 py-24 max-w-6xl mx-auto">
+    <section className="section-reveal px-6 py-24 max-w-6xl mx-auto">
       {/* Section tag */}
       <p className="text-xs font-bold tracking-widest uppercase text-orange-500 mb-4">
         How It Works
@@ -39,7 +39,7 @@ export default function HowItWorks() {
         {steps.map((step) => (
           <div
             key={step.number}
-            className="relative rounded-2xl p-8 bg-[#111] border-r border-r-[#1e1e1e] border-b border-b-[#1e1e1e] border-l border-l-[#1e1e1e] border-t-2 border-t-orange-500 overflow-hidden"
+            className="step-card relative rounded-2xl p-8 bg-[#111] border-r border-r-[#1e1e1e] border-b border-b-[#1e1e1e] border-l border-l-[#1e1e1e] border-t-2 border-t-orange-500 overflow-hidden"
           >
             {/* Faded step number */}
             <span className="absolute top-4 right-6 text-7xl font-black text-white/5 select-none leading-none">

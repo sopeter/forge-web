@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="px-6 py-16 border-t border-white/10 text-center">
+    <footer className="section-reveal px-6 py-16 border-t border-white/10 text-center">
       {/* Wordmark */}
       <div className="flex items-center justify-center gap-2 mb-4">
         <span className="text-2xl" aria-hidden="true">🔥</span>

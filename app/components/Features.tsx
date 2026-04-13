@@ -33,7 +33,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="px-6 py-24 max-w-6xl mx-auto">
+    <section className="section-reveal px-6 py-24 max-w-6xl mx-auto">
       {/* Section tag */}
       <p className="text-xs font-bold tracking-widest uppercase text-orange-500 mb-4">
         Features
@@ -51,7 +51,7 @@ export default function Features() {
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="rounded-2xl p-7 bg-[#111] border border-[#1e1e1e] hover:border-orange-500/30 transition-colors duration-300"
+            className="feature-card rounded-2xl p-7 bg-[#111] border border-[#1e1e1e]"
           >
             <span className="text-3xl mb-4 block">{feature.emoji}</span>
             <h3 className="text-base font-black uppercase tracking-wide text-white mb-2">

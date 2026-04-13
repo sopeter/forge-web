@@ -1,6 +1,24 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Nav() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 backdrop-blur-md bg-black/40 border-b border-white/5">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 backdrop-blur-md transition-all duration-500 ${
+        scrolled
+          ? "py-3 bg-black/80 border-b border-white/10"
+          : "py-4 bg-black/40 border-b border-white/5"
+      }`}
+    >
       {/* Wordmark */}
       <div className="flex items-center gap-2">
         <span className="text-2xl" aria-hidden="true">🔥</span>

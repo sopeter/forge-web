@@ -56,7 +56,7 @@ function ComparisonColumn({
 
 export default function Problem() {
   return (
-    <section className="px-6 py-24 max-w-6xl mx-auto">
+    <section className="section-reveal px-6 py-24 max-w-6xl mx-auto">
       {/* Section tag */}
       <p className="text-xs font-bold tracking-widest uppercase text-orange-500 mb-4">
         The Problem

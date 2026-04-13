@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --no-eslint --yes)",
+      "Bash(mkdir -p /tmp/forge-backup)",
+      "Bash(mv README.md.bak /tmp/forge-backup/README.md)",
+      "Bash(mv docs:*)",
+      "Bash(mv /tmp/forge-backup/README.md \"C:/Users/peter/Coding/forge-web/README.md\")",
+      "Bash(mv /tmp/forge-backup/docs \"C:/Users/peter/Coding/forge-web/docs\")",
+      "Bash(npx tsc:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(grep -E \"\\\\.\\(ts|js|css\\)$\")",
+      "Bash(npm run:*)",
+      "mcp__plugin_vercel_vercel__list_teams",
+      "mcp__plugin_vercel_vercel__list_projects",
+      "mcp__plugin_vercel_vercel__deploy_to_vercel",
+      "Bash(npm install:*)",
+      "Bash(vercel:*)",
+      "Bash(cat \"C:/Users/peter/Coding/forge-web/out/_next/static/css/\"*.css)",
+      "mcp__plugin_vercel_vercel__web_fetch_vercel_url",
+      "Bash(ls out/_next/static/chunks/*.css)"
+    ]
+  }
+}

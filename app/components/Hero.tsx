@@ -94,16 +94,42 @@ export default function Hero() {
         </span>
       </h1>
 
+      {/* Bold outcome stat */}
+      <p
+        className="hero-in relative z-10 mt-8 text-white/90 text-lg md:text-2xl font-bold tracking-tight max-w-2xl"
+        style={{ animationDelay: "160ms" }}
+      >
+        The only fitness app built on{" "}
+        <span className="text-orange-400">actual body composition scans</span>
+        {" "}— not self-reported stats.
+      </p>
+
       {/* Subtext */}
       <p
-        className="hero-in relative z-10 mt-6 max-w-xl text-white/70 text-base md:text-lg leading-relaxed"
+        className="hero-in relative z-10 mt-4 max-w-xl text-white/50 text-sm md:text-base leading-relaxed"
         style={{ animationDelay: "200ms" }}
       >
-        Forge uses your{" "}
-        <strong className="text-white font-semibold">body composition data</strong>{" "}
-        — not self-reported stats — to generate and continuously adapt a training
-        program built specifically for you.
+        Forge reads your InBody data — muscle mass, body fat %, metabolic rate — and
+        builds a training program that could only be yours. It rewrites itself every
+        4–8 weeks as your body changes.
       </p>
+
+      {/* App Store rating placeholders */}
+      <div
+        className="hero-in relative z-10 mt-6 flex items-center justify-center gap-4 flex-wrap"
+        style={{ animationDelay: "260ms" }}
+      >
+        <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
+          <span className="text-sm">🍎</span>
+          <div className="text-left">
+            <div className="text-white text-xs font-black leading-none">App Store</div>
+            <div className="text-white/40 text-[10px] tracking-wide">Coming soon</div>
+          </div>
+        </div>
+        <div className="text-white/20 text-xs font-bold tracking-widest uppercase">
+          iOS 17+ · iPhone
+        </div>
+      </div>
 
       {/* iPhone frames */}
       <div

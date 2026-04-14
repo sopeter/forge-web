@@ -27,10 +27,18 @@ export default function Nav() {
         </span>
       </div>
 
-      {/* Status badge */}
-      <span className="hidden sm:inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase border border-orange-500 text-orange-500">
-        In Development · iOS 17+
-      </span>
+      {/* Nav right */}
+      <div className="flex items-center gap-3">
+        <span className="hidden md:inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase border border-orange-500/50 text-orange-500/70">
+          In Development
+        </span>
+        <a
+          href="#"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase bg-orange-500 text-black hover:bg-orange-400 transition-colors duration-200"
+        >
+          <span>🍎</span> App Store
+        </a>
+      </div>
     </nav>
   );
 }
